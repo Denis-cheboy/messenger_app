@@ -1,0 +1,65 @@
+.registerContainer{
+    height:calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    max-width:90%;
+    margin:0 auto;
+}
+.profile{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    position: relative;
+    border:1px solid grey;
+}
+.profile>img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile>label{
+    position: absolute;
+    bottom:0;
+    right:0px
+}
+.registerRight{
+    flex:2;
+    align-items: center;
+    justify-content: center;
+}
+.registerRight>h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.registerRight>form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.registerLeft{
+    flex:2
+}
+.registerLeft>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.registerRight>form>p{
+    color:grey;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+@media screen  and (max-width:560px){
+
+    .registerLeft{
+        display:none
+    }
+}

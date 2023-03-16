@@ -1,0 +1,80 @@
+.messengerContainer{
+    width:100%;
+    max-width: 90%;
+    margin:0 auto;
+    display: flex;
+    background-color: rgb(236, 240, 243);
+    height:calc(100vh - 60px)
+}
+.sidebar{
+    flex:4;
+    background-color: rgb(236, 240, 243);
+}
+.messageContainer{
+    flex:8
+}
+.messageBox{
+    height:80vh;
+    border:1px solid grey;
+    width:100%;
+    margin-top: 10px;
+    overflow: auto;
+}
+.messageBottom{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid grey;
+    padding:2px 5px;
+    background-color: white;
+}
+.messageInput{
+    border:none;
+    color:grey;
+    outline:none;
+    flex:9;
+}
+.message-inner{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width:200px;
+    max-width:90%;
+    text-align: left;
+    min-height:80px;
+    font:400 1em, sans-serif;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #d1e7dd;
+}
+.msg>.message-inner{
+    background-color: #ffdab9;
+}
+.msg{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.top{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.content{
+    margin-bottom: 15px;
+}
+.date{
+    text-align: center;
+    padding:10px;
+    margin-top:0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.send:disabled{
+    cursor:not-allowed;
+}
+

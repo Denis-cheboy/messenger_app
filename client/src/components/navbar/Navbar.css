@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:60px;
+    background-color: rgb(64, 153, 153);
+    width:100%;
+    max-width: 90%;
+    margin:0 auto;
+
+}
+.logo>img{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color:white;
+    margin-left: 20px;
+}
+.changeColor{
+    color:rgb(14, 235, 235)
+}
+.right{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.chatLink{
+    color:white;
+    cursor:pointer;
+    margin-right: 20px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-right:20px;
+    gap:10px;
+    cursor:pointer
+}
+.user>img{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user>span{
+    color:white;
+    font-weight: 200;
+}
+.navLinks{
+    display: flex;
+    gap:20px;
+}
+.loginLink,.signupLink{
+    padding:5px 15px;
+    border:1px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:teal;
+    cursor:pointer;
+    transition: all 0.5s ease;
+}
+.loginLink,.signupLink>span{
+    text-align: center;
+    color:white;
+
+}
+.loginLink:hover{
+    background-color: rgb(64, 153, 153);
+}
+.signupLink:hover{
+    background-color: rgb(64, 153, 153);
+}
