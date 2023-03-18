@@ -1,8 +1,9 @@
 const mongoose=require("mongoose")
+require("dotenv").config()
 
 const connectDB=async(req,res,next)=>{
     try{
-        await mongoose.connect("mongodb://127.0.0.1:27017/messageAppDB",{
+        await mongoose.connect(process.env.MONGO_DB_URI,{
             useUnifiedTopology:false,
             useNewUrlParser:false
         })

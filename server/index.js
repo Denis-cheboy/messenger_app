@@ -23,21 +23,23 @@ const server=require("http").createServer(app)
 
 const io=require("socket.io")(server,{
     cors:{
-        origin:["http://localhost:3000"]
+        origin:["https://messenger-app-2jss.onrender.com"]
     }
 })
 
 // inbuilt middlewares
 app.use(express.urlencoded({extended:true}))
-app.use(cors())
+app.use(cors({
+    origin:["https://messenger-app-2jss.onrender.com"]
+}))
 app.use(express.json())
 app.use(cookieParser())
 
 // routes middleware
-app.use("/api/auth",authRoute)
-app.use("/api/rooms",roomsRoute)
-app.use("/api/users",userRoute)
-app.use("/api/logout",logoutRoute)
+app.use("/auth",authRoute)
+app.use("/rooms",roomsRoute)
+app.use("/users",userRoute)
+app.use("/logout",logoutRoute)
 app.use(errorHandler)
 
 // socket io server

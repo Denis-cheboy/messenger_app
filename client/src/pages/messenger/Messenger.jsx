@@ -26,7 +26,7 @@ const Messenger = () => {
   useEffect(()=>{
     const fetchMember=async()=>{
       try{
-        const res=await axios.get(`http://localhost:3500/api/users/${findMember}`)
+        const res=await axios.get(`https://messenger-app-api.onrender.com/users/${findMember}`)
         setMember(res.data)
       }
       catch(err){

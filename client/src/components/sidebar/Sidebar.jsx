@@ -51,7 +51,7 @@ const Sidebar = () => {
     joinRoom("general")
     const fetchRooms=async()=>{
         try{
-            const res=await axios.get("http://localhost:3500/api/rooms")
+            const res=await axios.get("https://messenger-app-api.onrender.com/rooms")
             setRooms(res.data)
         }
         catch(err){

@@ -13,7 +13,7 @@ const Navbar = () => {
   const navigate=useNavigate()
 
   const handlelogout=async()=>{
-      await axios.get(`http://localhost:3500/api/logout/${user._id}`)
+      await axios.get(`https://messenger-app-api.onrender.com/logout/${user._id}`)
       dispatch(logout())
       navigate("/",{replace:true})
   }
